@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#results-title {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#exhibit-title {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#search-results {
+  margin-top: 2rem;
+}
+
+#pagination-text {
+  padding-top: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+#exhibit-image-container{
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+#exhibit-image {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+
+.table-category{
+  font-weight: bold;
+}
